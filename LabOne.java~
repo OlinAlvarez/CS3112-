@@ -52,11 +52,11 @@ public class LabOne {
           
           else if(key>nums[pivot]){
               low=pivot;
-              pivot =(high+low)/2;
+              pivot = high/2;
           }
           else{
               high=pivot;
-              pivot=(high+low)/2;
+              pivot=high/2;
           }
       }
       return -1;
