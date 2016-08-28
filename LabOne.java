@@ -45,18 +45,16 @@ public class LabOne {
       int high = nums.length;
       int low=0;
       
-      while( high>=low){
+      while( high>low){
           pivot=(high+low)/2;
           if(key==nums[pivot])
               return pivot;
           
           else if(key>nums[pivot]){
               low=pivot;
-              pivot =(high+low)/2;
           }
           else{
               high=pivot;
-              pivot=(high+low)/2;
           }
       }
       return -1;

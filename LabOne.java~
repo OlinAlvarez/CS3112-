@@ -52,12 +52,13 @@ public class LabOne {
           
           else if(key>nums[pivot]){
               low=pivot;
-              pivot = high/2;
+              pivot =(high+low)/2;
           }
           else{
               high=pivot;
-              pivot=high/2;
+              pivot=(high+low)/2;
           }
+	  System.out.println("running");
       }
       return -1;
   }
